@@ -1,0 +1,16 @@
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    margin: 20px auto 20px auto;
+    p {
+        align-self: center;
+    }
+}
+
+#zoe-selfie {
+    img {
+        width: 30vw;
+        border-radius: 20px;
+}}

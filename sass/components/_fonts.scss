@@ -1,0 +1,20 @@
+@use '../base/baseStyles' as a;
+
+$primary-font: "capellina-caps", serif;
+
+.title-font {
+    color: a.$secondary-color;
+    font-family: "capellina-caps", serif;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.paragraph-text {
+    color: a.$secondary-color;
+    font-family: "capellina-caps", serif;
+    font-size: 25px;
+}
+
+//font-family: "capellina-caps", serif;
+//font-weight: 400;
+//font-style: normal;
