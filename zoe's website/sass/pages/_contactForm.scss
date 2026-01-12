@@ -1,0 +1,28 @@
+@use '../base/baseStyles' as a;
+
+#contact-section {
+    background-color: a.$primary-color;
+}
+
+.input-form {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-box {
+    background-color: a.$primary-color;
+    border-color: a.$secondary-color;
+    color: a.$secondary-color;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 10px;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    width: 50vw;
+}
+
