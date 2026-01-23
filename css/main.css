@@ -187,4 +187,10 @@ footer nav {
 #zoe-selfie img {
   width: 30vw;
   border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
