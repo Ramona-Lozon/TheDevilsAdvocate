@@ -2,22 +2,22 @@
 @use 'fonts' as f;
 
 header {
-    background-color: none;
+    background: rgba(0, 0, 0, .2);
     height: 100px;
-    top: 0;
     display: flex;
     flex-direction: row;
     position: sticky;
+    top: 0;
     align-items: center;
     z-index: 1;
+    width: 100vw;
+
+    
     a{
-  margin: 15px;
+    margin: 15px;
+    opacity: 0.4;
     }
-     img{
-        width: 60px;
-      
-        opacity:0.2;
-     }
+     img{width: 60px;}
      #hamburger {
         display: flex;
         height: 50px;
@@ -34,27 +34,26 @@ header {
             font-family: f.$primary-font;
             font-size: 40px;
         }
-
-
      }
 }
 
-header {
+     header:hover {
+       background: rgba(0, 0, 0, .5);
 
-    img:hover {
-      opacity: 01;
-      transition: 0.2s;
-      cursor: pointer;
+       a {opacity: 100;}
+       a:hover {animation: neonFlicker 1.5s infinite alternate;}
+        img:hover {animation: neonFlickerObject 1.5s infinite alternate;}
     }
-    nav {
-       a:hover {
-           opacity: 01;
-           transition: 0.2s;
-       }
 
+            @keyframes neonFlicker {
+                0%, 100% {text-shadow: 0 0 30px red;}
+                50% {text-shadow: 0 0 45px red;}}
 
-    }
-}
+                @keyframes neonFlickerObject {
+
+                0%, 100% {filter: drop-shadow(0 0 20px red);}
+                50% {filter: drop-shadow(0 0 25px red);}
+                }
 
 .lightbox {
     position: fixed;
@@ -107,3 +106,6 @@ header {
 @media (max-width: 1200px) {
   
 }
+
+
+

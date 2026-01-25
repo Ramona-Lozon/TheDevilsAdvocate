@@ -1,8 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: black;
+  background-color: rgb(20, 0, 0);
 }
 
 .button {
@@ -43,7 +45,10 @@ body {
   color: darkred;
   font-family: "capellina-caps", serif;
   font-size: 30px;
-  margin: 5px;
+}
+
+.plain-text {
+  text-decoration: none;
 }
 
 .paragraph-text {
@@ -53,21 +58,22 @@ body {
 }
 
 header {
-  background-color: none;
+  background: rgba(0, 0, 0, 0.2);
   height: 100px;
-  top: 0;
   display: flex;
   flex-direction: row;
   position: sticky;
+  top: 0;
   align-items: center;
   z-index: 1;
+  width: 100vw;
 }
 header a {
   margin: 15px;
+  opacity: 0.4;
 }
 header img {
   width: 60px;
-  opacity: 0.2;
 }
 header #hamburger {
   display: flex;
@@ -87,16 +93,35 @@ header nav a {
   font-size: 40px;
 }
 
-header img:hover {
-  opacity: 1;
-  transition: 0.2s;
-  cursor: pointer;
+header:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
-header nav a:hover {
-  opacity: 1;
-  transition: 0.2s;
+header:hover a {
+  opacity: 100;
+}
+header:hover a:hover {
+  animation: neonFlicker 1.5s infinite alternate;
+}
+header:hover img:hover {
+  animation: neonFlickerObject 1.5s infinite alternate;
 }
 
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 0 0 30px red;
+  }
+  50% {
+    text-shadow: 0 0 45px red;
+  }
+}
+@keyframes neonFlickerObject {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px red);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px red);
+  }
+}
 .lightbox {
   position: fixed;
   top: 0;
@@ -147,14 +172,12 @@ footer nav {
   margin: 10px auto 10px auto;
 }
 
-#contact-section {
-  background-color: black;
+#contactTitle {
+  margin: 10px auto 10px 10vw;
 }
 
 .input-form {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   display: flex;
   flex-direction: column;
 }
@@ -169,22 +192,29 @@ footer nav {
   height: auto;
   overflow: hidden;
   text-align: center;
-  margin: 10px auto 10px auto;
-  width: 50vw;
+  margin: 10px auto 10px 10vw;
+  width: 40vw;
+}
+
+#send-button {
+  margin: 10px auto 10px 10vw;
 }
 
 #about-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 70vw;
-  margin: 20px auto 20px auto;
-}
-#about-section p {
-  align-self: center;
+  width: 90vw;
 }
 
+#aboutTitle {
+  margin: 10px auto 10px 10vw;
+}
+
+#zoe-selfie {
+  display: flex;
+}
 #zoe-selfie img {
   width: 30vw;
   border-radius: 20px;
+  margin: 10px 10px 10px 10vw;
 }/*# sourceMappingURL=main.css.map */
