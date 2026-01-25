@@ -9,7 +9,8 @@
 </head>
 
 <header>
-<a href="#top"><img src="images/TDALogo.svg" alt="The Devil's Advocate"></a>
+<a href="#top"><img src="images/TDALogo.svg" alt="The Devil's Advocate Logo"></a>
+<a  href="#top" class="plain-text"><h3 class="title-font">The Devil's Advocate</h3></a>
 <div id="hamburger"><img src="images/hamburger.svg" alt="Mobile Menu Toggle"></div>
     <nav class="navMenu" id="navLinks">
             <a href="#about-section">About</a>
@@ -30,25 +31,25 @@
     <a class="lightboxLink" href="#about-section">About</a>
     <a class="lightboxLink" href="#contact-section">Contact</a>
   </div>
-            <article id="about-section" class="centered">
-                <h3 class="title-font">The Devils Advocate</h3>
+            <article id="about-section">
+                <!-- <div>
+                <h3 id="aboutTitle" class="title-font">The Devil's Advocate</h3>
+            </div> -->
 
-                <div id="zoe-selfie"><img src="images/zoe.jpg" alt="The Devil's Advocate"></div>
+                <div id="zoe-selfie">
+                    <img src="images/zoe.jpg" alt="The Devil's Advocate">
+                    <div>
+                        <p id="description" class="paragraph-text">
+                        "The Devil's Advocate is a LGBTQ+ run, London Ontario based accounting and advocacy firm founded in 2024. Our focus is on community, primarily serving small business owners, self employed locals, and people whose primary income is Ontario Works, Employment Insurance, WSIB and ODSP.  We offer affordable, sliding scale rates on a case by case basis to make sure our clients feel financially empowered in a judgement free environment. Money matters and government paperwork can be stressful and axiety inducing, don't go to a corporation that sells you a product, choose the devil you know, over the one you don’t.  
+                        </p>
+                    </div>
+                </div>
 
-<p class="paragraph-text">The Devil’s Advocate is an accounting firm built on a simple but uncompromising principle: every number deserves scrutiny, and every decision deserves a second look.
-
-Founded and led by Zoe Beecham, The Devil’s Advocate exists to challenge assumptions, identify risk before it becomes costly, and ensure that financial strategies stand up under pressure. Where others may accept surface-level answers, we ask the harder questions—because strong finances are forged through rigor, not convenience.
-
-Zoe brings a sharp analytical approach and a deep understanding of accounting, compliance, and financial strategy. Her leadership sets the tone for the firm: precise, ethical, and relentlessly thorough. Clients trust The Devil’s Advocate not just to prepare their books, but to protect their interests by anticipating problems, stress-testing decisions, and advocating for the most defensible financial outcomes.
-
-We work with individuals and businesses who value clarity, accountability, and long-term stability. Whether navigating complex tax matters, ensuring regulatory compliance, or building a sound financial foundation, we act as a critical partner—one who is unafraid to challenge, question, and ultimately strengthen your position.
-
-At The Devil’s Advocate, we believe that the best financial advice is not the easiest to hear, but the most honest.</p>
-
+                    
             </article>
 
             <!-- contact section -->
-            <article id="contact-section" class="centered">
+            <article id="contact-section">
                 <h3 class="title-font" id="contactTitle">Contact</h3>
             <!--Buttons-->
             <form class="input-form" method="post" action="sendmail.php">
@@ -56,7 +57,7 @@ At The Devil’s Advocate, we believe that the best financial advice is not the 
                 <input class="form-box invisible" type="text" name="org" id="org" placeholder="organization" action="sendmail.php"><br><br>
                 <input class="form-box invisible" type="email" name="email" id="email" placeholder="email" action="sendmail.php"><br><br>
                 <textarea class="form-box invisible" name="msg" style="height:auto;" id="msg" placeholder="message" action="sendmail.php"></textarea><br><br>
-                <input class="button invisible" id="send-button" type="submit" value="Submit"><br><br><br><br>
+                <input class="button invisible" id="send-button" type="submit" value="Send"><br><br><br><br>
             </form>   
             </article>
 

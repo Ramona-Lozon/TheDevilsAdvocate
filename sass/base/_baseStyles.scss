@@ -1,11 +1,14 @@
 $primary-color: black;
 $secondary-color: darkred;
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: $primary-color;
+    background-color: rgb(20, 0, 0);
 }
 
 .button {

@@ -1,13 +1,15 @@
 @use '../base/baseStyles' as a;
 
-#contact-section {
-    background-color: a.$primary-color;
+// #contact-section {
+//     background-color: a.$primary-color;
+// }
+
+#contactTitle {
+        margin: 10px auto 10px 10vw;
 }
 
 .input-form {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
     display: flex;
     flex-direction: column;
 
@@ -22,7 +24,11 @@
     height:auto;
     overflow: hidden;
     text-align: center;
-    margin: 10px auto 10px auto;
-    width: 50vw;
+    margin: 10px auto 10px 10vw;
+    width: 40vw;
+}
+
+#send-button {
+       margin: 10px auto 10px 10vw;
 }
 

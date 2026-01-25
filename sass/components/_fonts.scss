@@ -6,7 +6,10 @@ $primary-font: "capellina-caps", serif;
     color: a.$secondary-color;
     font-family: "capellina-caps", serif;
     font-size: 30px;
-    margin: 5px;
+}
+
+.plain-text {
+    text-decoration: none;
 }
 
 .paragraph-text {
